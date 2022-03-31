@@ -18,7 +18,9 @@ async function createTables() { // create new table
             CREATE TABLE users (
                 id SERIAL PRIMARY KEY,
                 username varchar(255) UNIQUE,
-                password varchar(255) NOT NULL
+                password varchar(255) NOT NULL,
+                name varchar(255) NOT NULL,
+                location varchar(255)
             );
         `);
     } catch (error) {
